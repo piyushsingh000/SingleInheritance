@@ -1,0 +1,26 @@
+// Single inheritance
+
+#include <iostream>
+using namespace std;
+
+class Animal {
+    public: 
+    int age ;
+    int weight;
+    
+    public:
+    void Speak() {
+        cout<<"Speaking" <<endl ;   
+        }
+};
+
+class Dog : public Animal {
+    
+};
+
+int main () {
+    Dog d;
+    d.Speak() ;
+    return 0;
+    
+}
